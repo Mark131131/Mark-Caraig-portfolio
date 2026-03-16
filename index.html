@@ -101,6 +101,20 @@
            filter: blur(80px);
            opacity: 0.2;
        }
+
+       /* Project image hover effects */
+       .project-image-container {
+           position: relative;
+           overflow: hidden;
+       }
+       
+       .project-image-container img {
+           transition: transform 0.7s ease;
+       }
+       
+       .project-image-container:hover img {
+           transform: scale(1.1);
+       }
    </style>
 </head>
 <body class="selection:bg-cyan-400 selection:text-slate-900">
@@ -184,7 +198,8 @@
                <div class="relative group reveal">
                    <div class="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-indigo-400 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
                    <div class="relative rounded-2xl overflow-hidden aspect-[4/5] glass-card">
-                       <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop" alt="Mark I. Caraig" class="w-full h-full object-cover transform transition duration-700 group-hover:scale-110">
+                       <!-- UPDATED: Your actual photo -->
+                       <img src="mark.jpg" alt="Mark I. Caraig" class="w-full h-full object-cover transform transition duration-700 group-hover:scale-110">
                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
                        <div class="absolute bottom-0 left-0 p-6">
                            <div class="flex items-center gap-2 text-cyan-400 mb-2">
@@ -306,11 +321,12 @@
            </div>
 
            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+               <!-- Project 1: E-Commerce UI Redesign -->
                <div class="group relative rounded-2xl overflow-hidden cursor-pointer reveal">
-                   <div class="aspect-video bg-gray-800 relative overflow-hidden">
-                       <div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-slate-900 flex items-center justify-center group-hover:scale-110 transition-transform duration-700">
-                           <i class="fas fa-shopping-cart text-6xl text-white/20"></i>
-                       </div>
+                   <div class="aspect-video bg-gray-800 relative overflow-hidden project-image-container">
+                       <!-- UPDATED: E-Commerce Project Image -->
+                       <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=450&fit=crop" alt="E-Commerce UI Redesign" class="w-full h-full object-cover">
+                       <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-40"></div>
                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
                            <span class="px-6 py-3 border border-white text-white rounded-full font-bold hover:bg-white hover:text-black transition-colors">View Case Study</span>
                        </div>
@@ -328,11 +344,12 @@
                    </div>
                </div>
 
+               <!-- Project 2: Cinematic Short Film -->
                <div class="group relative rounded-2xl overflow-hidden cursor-pointer reveal" style="transition-delay: 100ms;">
-                   <div class="aspect-video bg-gray-800 relative overflow-hidden">
-                       <div class="absolute inset-0 bg-gradient-to-br from-purple-900 to-slate-900 flex items-center justify-center group-hover:scale-110 transition-transform duration-700">
-                           <i class="fas fa-film text-6xl text-white/20"></i>
-                       </div>
+                   <div class="aspect-video bg-gray-800 relative overflow-hidden project-image-container">
+                       <!-- UPDATED: Cinematic Short Film Project Image -->
+                       <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=450&fit=crop" alt="Cinematic Short Film" class="w-full h-full object-cover">
+                       <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-40"></div>
                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
                            <span class="px-6 py-3 border border-white text-white rounded-full font-bold hover:bg-white hover:text-black transition-colors">Watch Video</span>
                        </div>
